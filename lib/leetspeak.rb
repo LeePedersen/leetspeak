@@ -20,11 +20,10 @@ def leetspeak(str)
     if word[0] == "s"
       word = word.tr("eE", "3").tr("oO", "0").tr("I", "1").tr("s", "z")
       word[0] = word[0].tr("z", "s")
-      new_array.push(word)
     else
       word = word.tr("eE", "3").tr("oO", "0").tr("I", "1").tr("s", "z")
-      new_array.push(word)
     end
+    new_array.push(word)
   end
   new_array.join(" ");
 end
